@@ -9,11 +9,11 @@ router.post('/', (req, res) => {
     res.send('Adding new contact')
 })
 
-router.put('/', (req, res) => {
+router.put('/:id', (req, res) => {
     res.send('Updating contact')
 })
 
-router.delete('/', (req, res) => {
+router.delete('/:id', (req, res) => {
     res.send('Deleting contact')
 })
 
