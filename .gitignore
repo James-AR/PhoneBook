@@ -1,2 +1,8 @@
 node_modules
-./config/default.json
+/config/default.json
+
+/client/build
+
+/client/.env.local
+/client/.development.local
+/client/.production.local
