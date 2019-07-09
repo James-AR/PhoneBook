@@ -6,7 +6,20 @@ import { ADD_CONTACT, DELETE_CONTACT, SET_CURRENT, CLEAR_CURRENT, UPDATE_CONTACT
 
 const ContactState = props => {
     const initialState = {
-        contacts: []
+        contacts: [
+            {
+            id: 1,
+            name: 'Joe Huggins',
+            email: 'joe@email.com',
+            phone: '111-111-1111',
+            type: 'personal'
+        }, {
+            id: 2,
+            name: 'Sara Watt',
+            email: 'sara@email.com',
+            phone: '222-222-2222',
+            type: 'personal'
+        }]
     }
 
     const [state, dispatch] = useReducer(ContactReducer, initialState)
